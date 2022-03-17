@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo Installing Dockerized rpitx... 
-echo this script assumes docker file has libsndfile1-dev, git, make ( aka build-essential), imagemagick, libfftw3-dev,rtl-sdr buffer already installed
+echo "this script assumes docker file has libsndfile1-dev, git, make  aka build-essential, imagemagick, libfftw3-dev,rtl-sdr buffer already installed"
 
 apt-get update
 # apt-get install -y libsndfile1-dev git
