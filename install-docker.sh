@@ -1,12 +1,13 @@
 #!/bin/sh
 
-echo Installing rpitx... 
+echo Installing Dockerized rpitx... 
+echo this script assumes docker file has libsndfile1-dev, git, make ( aka build-essential), imagemagick, libfftw3-dev,rtl-sdr buffer already installed
 
 apt-get update
-apt-get install -y libsndfile1-dev git
-apt-get install -y imagemagick libfftw3-dev
+# apt-get install -y libsndfile1-dev git
+# apt-get install -y imagemagick libfftw3-dev
 #For rtl-sdr use
-apt-get install -y rtl-sdr buffer
+# apt-get install -y rtl-sdr buffer
 # We use CSDR as a dsp for analogs modes thanks to HA7ILM
 git clone https://github.com/F5OEO/csdr
 cd csdr || exit
